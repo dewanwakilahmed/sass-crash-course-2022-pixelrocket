@@ -1,1 +1,11 @@
-$btn-background: #ff595e;
+$red: #ff595e;
+$blue: #0a2463;
+$yellow: #f9cb40;
+
+$theme-colors: (
+  "primary": $red,
+  "secondary": $blue,
+  "warning": $yellow,
+);
+
+$btn-background: $red;
