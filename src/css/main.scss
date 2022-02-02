@@ -1,7 +1,8 @@
-/* 
-- Reset styles
-- taken from: https://piccalil.li/blog/a-modern-css-reset/
-*/
+$background: red;
+
+body {
+  background: $background;
+}
 
 *,
 *::before,
@@ -21,7 +22,6 @@ dl,
 dd {
   margin: 0;
 }
-
 
 html:focus-within {
   scroll-behavior: smooth;
@@ -52,9 +52,9 @@ select {
 
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -65,7 +65,6 @@ select {
   }
 }
 
-
 img {
   image-rendering: -webkit-optimize-contrast;
 }
@@ -75,15 +74,20 @@ img {
 */
 
 /* Google font import */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
-  color: #838EA4;
+  color: #838ea4;
 }
-h1, h2, h3, h4, h5, h6 {
-  color: #0A2463;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #0a2463;
 }
 
 h1 {
@@ -105,41 +109,40 @@ h4 {
 }
 
 p {
-  font-size: 1.20rem;
+  font-size: 1.2rem;
   margin-bottom: 1.25rem;
 }
 .small {
-  font-size: .95rem;
+  font-size: 0.95rem;
 }
-
 
 /* Buttons */
 .btn-red {
-  background-color: #FF595E;
+  background-color: #ff595e;
   color: white !important;
   border: 0;
   text-decoration: none;
-  color: #838EA4;
+  color: #838ea4;
   font-weight: 500;
-  font-size: .975rem;
+  font-size: 0.975rem;
   padding: 1rem 1.25rem;
   border-radius: 4px;
-  transition: all ease-in .2s;
+  transition: all ease-in 0.2s;
 }
 .btn-red:hover {
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .btn-blue {
   border: 0;
   text-decoration: none;
-  color: #838EA4;
+  color: #838ea4;
   font-weight: 500;
-  font-size: .975rem;
+  font-size: 0.975rem;
   padding: 1rem 1.25rem;
   border-radius: 4px;
-  transition: all ease-in .2s;
-  background-color: #0A2463;
+  transition: all ease-in 0.2s;
+  background-color: #0a2463;
   color: white;
 }
 
@@ -147,21 +150,21 @@ p {
   border: 0;
   text-decoration: none;
   background: transparent;
-  color: #838EA4;
+  color: #838ea4;
   font-weight: 500;
-  font-size: .975rem;
+  font-size: 0.975rem;
   padding: 1rem 1.25rem;
 }
 
 .btn-link:hover {
- color: #FF595E;
+  color: #ff595e;
 }
 .btn-icon {
   border: 0;
   text-decoration: none;
-  color: #838EA4;
+  color: #838ea4;
   font-weight: 500;
-  font-size: .975rem;
+  font-size: 0.975rem;
   padding: 1rem 1.25rem;
   border-radius: 4px;
   display: flex;
@@ -171,7 +174,6 @@ p {
   justify-content: center;
   align-items: center;
 }
-
 
 /* Navbar */
 .navbar {
@@ -190,8 +192,8 @@ p {
 
 .nav-link {
   text-decoration: none;
-  color: #0A2463;
-  font-size: .95rem;
+  color: #0a2463;
+  font-size: 0.95rem;
   font-weight: 500;
 }
 
@@ -199,7 +201,7 @@ p {
   padding: 1.5rem;
   padding-bottom: 15rem;
   margin-bottom: 20rem;
-  background-color: #F2F5FA;
+  background-color: #f2f5fa;
 }
 .header-nav {
   display: flex;
@@ -207,7 +209,6 @@ p {
   margin: 0;
   padding: 0;
 }
-
 
 /* 
 - Hero 
@@ -235,11 +236,11 @@ p {
   border-radius: 6px;
   max-width: 100%;
   border-radius: 4px;
-  box-shadow: 0 1.5rem 4rem rgba(22,28,45,.1);
+  box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.1);
 }
 .hero-subtitle {
-  color: #45C1FF;
-  font-size: .85rem;
+  color: #45c1ff;
+  font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 600;
@@ -259,7 +260,7 @@ p {
 
 .hero-btns {
   margin-bottom: 4.5rem;
-  padding-top: .5rem;
+  padding-top: 0.5rem;
 }
 
 /* 
@@ -277,7 +278,7 @@ p {
 */
 .reasons {
   display: grid;
-  grid-template-columns: repeat(2,minmax(0,1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2.25rem;
   margin-bottom: 10rem;
 }
@@ -287,8 +288,8 @@ p {
 }
 
 .reasons-subtitle {
-  color: #45C1FF;
-  font-size: .85rem;
+  color: #45c1ff;
+  font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 600;
@@ -297,18 +298,18 @@ p {
 }
 
 .reasons-btns {
-  padding-top: .5rem;
+  padding-top: 0.5rem;
 }
 
 .reasons-icons {
   border-radius: 4px;
   padding: 1.5rem;
-  background-color: #F2F5FA;
+  background-color: #f2f5fa;
 }
 
 .reasons-icons ul {
   display: grid;
-  grid-template-columns: repeat(1,minmax(0,1fr));
+  grid-template-columns: repeat(1, minmax(0, 1fr));
   height: 100%;
   list-style: none;
   margin: 0;
@@ -320,7 +321,7 @@ p {
   align-items: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #DADFE9;
+  border-bottom: 1px solid #dadfe9;
 }
 .reasons-icons ul li:first-of-type {
   padding-top: 0;
@@ -331,7 +332,7 @@ p {
 }
 
 .reasons-icons ul li p {
-  font-size: .95rem;
+  font-size: 0.95rem;
   margin: 0;
 }
 
@@ -340,7 +341,7 @@ p {
   text-decoration: none;
   color: white;
   font-weight: 500;
-  font-size: .975rem;
+  font-size: 0.975rem;
   padding: 1rem 1.25rem;
   border-radius: 4px;
   display: flex;
@@ -349,7 +350,7 @@ p {
   border-radius: 100%;
   justify-content: center;
   align-items: center;
-  background-color: #2F52E0;
+  background-color: #2f52e0;
   margin-right: 1.5rem;
   flex-shrink: 0;
 }
@@ -359,7 +360,7 @@ p {
   text-decoration: none;
   color: white;
   font-weight: 500;
-  font-size: .975rem;
+  font-size: 0.975rem;
   padding: 1rem 1.25rem;
   border-radius: 4px;
   display: flex;
@@ -368,7 +369,7 @@ p {
   border-radius: 100%;
   justify-content: center;
   align-items: center;
-  background-color: #F9CB40;
+  background-color: #f9cb40;
   margin-right: 1.5rem;
   flex-shrink: 0;
 }
@@ -378,7 +379,7 @@ p {
   text-decoration: none;
   color: white;
   font-weight: 500;
-  font-size: .975rem;
+  font-size: 0.975rem;
   padding: 1rem 1.25rem;
   border-radius: 4px;
   display: flex;
@@ -387,7 +388,7 @@ p {
   border-radius: 100%;
   justify-content: center;
   align-items: center;
-  background-color: #FF595E;
+  background-color: #ff595e;
   margin-right: 1.5rem;
   flex-shrink: 0;
 }
@@ -396,7 +397,7 @@ p {
 - Footer
 */
 .footer-cta {
-  background-color: #0A2463;
+  background-color: #0a2463;
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
@@ -426,7 +427,6 @@ footer h3 {
   margin-bottom: 0;
 }
 
-
 .footer-copyright {
   max-width: 1320px;
   margin-left: auto;
@@ -438,7 +438,7 @@ footer h3 {
 }
 
 .footer-copyright p {
-  font-size: .95rem;
+  font-size: 0.95rem;
   margin: 0;
 }
 
@@ -455,7 +455,7 @@ footer h3 {
 
 .footer-copyright ul li a {
   text-decoration: none;
-  color: #0A2463;
-  font-size: .95rem;
+  color: #0a2463;
+  font-size: 0.95rem;
   font-weight: 500;
 }

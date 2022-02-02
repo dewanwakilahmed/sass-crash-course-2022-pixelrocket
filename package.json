@@ -1,0 +1,23 @@
+{
+  "name": "sass-crash-course-2022-pixelrocket",
+  "version": "1.0.0",
+  "description": "SASS Crash Course 2022",
+  "source": "./src/index.html",
+  "scripts": {
+    "dev": "parcel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dewanwakilahmed/sass-crash-course-2022-pixelrocket.git"
+  },
+  "author": "Dewan Wakil Ahmed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dewanwakilahmed/sass-crash-course-2022-pixelrocket/issues"
+  },
+  "homepage": "https://github.com/dewanwakilahmed/sass-crash-course-2022-pixelrocket#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.2.1",
+    "parcel": "^2.2.1"
+  }
+}
