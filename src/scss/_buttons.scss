@@ -1,6 +1,8 @@
+@use "./variables" as *;
+
 /* Buttons */
 .btn-red {
-  background-color: #ff595e;
+  background-color: $btn-background;
   color: white !important;
   border: 0;
   text-decoration: none;
